@@ -1,0 +1,110 @@
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a background color to the body */
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the header */
+header {
+    background-color: #007acc;
+    color: #fff;
+    padding: 10px 0;
+}
+
+/* Style the container for the header content */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Style the logo */
+.logo img {
+    max-height: 50px;
+}
+
+/* Style the navigation menu */
+.menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu ul li {
+    margin-right: 20px;
+}
+
+.menu ul li:last-child {
+    margin-right: 0;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #ffcc00;
+}
+
+/* Style the search bar */
+.search-bar {
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+    width: 200px;
+}
+
+.search-btn {
+    background-color: #ffcc00;
+    color: #000;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-btn:hover {
+    background-color: #ffdb4d;
+}
+
+/* Style the user actions */
+.user-actions a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .menu ul {
+        margin-top: 20px;
+    }
+    
+    .search-bar {
+        margin-right: 0;
+        margin-top: 10px;
+    }
+    
+    .user-actions {
+        margin-top: 20px;
+    }
+}
