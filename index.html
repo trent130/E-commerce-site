@@ -28,20 +28,16 @@
                     </div>
                 </div>
                 <div class="search">
-                    <input class="search-bar" type="text" placeholder="Search for anything">
+                    <input class="search-bar" type="text" placeholder="Search for anything...">
                     <button class="search-btn">Search</button>
                 </div>
                 <div class="user-actions">
                     <a href="#" class="signin-btn">Sign in</a>
                     <a href="#" class="favorites-btn">
-                        <svg class="icon icon--heart">
-                            <use xlink:href="#icon-heart"></use> <!-- Replace with your SVG reference -->
-                        </svg>
+                        <img src="assets/images/icons/favorite_FILL0_wght400_GRAD0_opsz24.png" alt="">
                     </a>
                     <a href="#" class="cart-btn">
-                        <svg class="icon icon--cart">
-                            <use xlink:href="#icon-cart"></use> <!-- Replace with your SVG reference -->
-                        </svg>
+                        <img src="assets/images/icons/add_shopping_cart_FILL0_wght400_GRAD0_opsz24.png" alt="">
                     </a>
                 </div>
             </div>
@@ -49,12 +45,25 @@
     </header>
     
     <main>
-        <div class="container">
-            <section class="credentials">
-                <a href="login.html">Login</a>
-                <a href="register.html">Register</a>
-            </section>
+        <div class="slideshow-container">
+            <div class="slide fade">
+                <div class="caption right-caption"><button><a href="#">Sign up</a></button></div>
+                <img src="assets/images/section_1.jpg" alt="Image 2">
+                <div class="caption left-caption"><button><a href="#">Login</a></button></div>
+            </div>
+            <div class="slide fade">
+                <div class="caption right-caption"><button><a href="#">Sign up</a></button></div>
+                <img src="assets/images/section_2.jpg" alt="Image 2">
+                <div class="caption left-caption"><button><a href="#">Login</a></button></div>
+            </div>
+            <div class="slide fade">
+                <div class="caption right-caption"><button><a href="#">Sign up</a></button></div>
+                <img src="assets/images/section_3.jpg" alt="Image 2">
+                <div class="caption left-caption"><button><a href="#">Login</a></button></div>
+            </div>
         </div>
+    
+        <script src="assets/js/script.js"></script>
     </main>
 
     <footer>

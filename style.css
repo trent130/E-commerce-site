@@ -4,17 +4,94 @@
     padding: 0;
 }
 
+.navbar {
+    background-color: #334453;
+    padding: 10px 0;
+  }
+  
+  .navbar .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .navbar .logo {
+    float: left;
+  }
+  
+  .navbar .menu {
+    float: right;
+  }
+  
+  .navbar .menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+  }
+  
+  .navbar .menu li {
+    display: inline-block;
+    list-style-type: none;
+  }
+  
+  .navbar .menu li a {
+    padding: 10px;
+    text-decoration: none;
+    color: #000000;
+    margin-left: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .navbar .menu li a:hover {
+    background-color: #72a59e;
+    border-radius: 6px;
+  }
+  
+  .navbar .search {
+    float: right;
+    margin-left: 20px;
+    border-radius: 4px;
+  }
+  
+  .navbar .search input {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .navbar .search button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #ffffff;
+    cursor: pointer;
+  }
+  
+  .navbar .user-actions {
+    float: right;
+    margin-left: 20px;
+  }
+  
+  .navbar .user-actions a {
+    padding: 10px;
+    text-decoration: none;
+    color: #000000;
+    margin-left: 10px;
+    font-weight: bold;
+  }
+  
+  .navbar .user-actions a:hover {
+    background-color: #345;
+  }
+  
+
 /* Apply a background color to the body */
 body {
     background-color: #f0f0f0;
     font-family: Arial, sans-serif;
-}
-
-/* Style the header */
-header {
-    background-color: #007acc;
-    color: #fff;
-    padding: 10px 0;
 }
 
 /* Style the container for the header content */
@@ -27,30 +104,10 @@ header {
     padding: 0 20px;
 }
 
-/* Style the logo */
-.logo img {
-    max-height: 50px;
-}
-
 /* Style the navigation menu */
-.menu ul {
-    list-style: none;
-    display: flex;
-}
-
-.menu ul li {
-    margin-right: 20px;
-}
 
 .menu ul li:last-child {
     margin-right: 0;
-}
-
-.menu a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
 }
 
 .menu a:hover {
@@ -58,13 +115,7 @@ header {
 }
 
 /* Style the search bar */
-.search-bar {
-    padding: 8px;
-    border: none;
-    border-radius: 4px;
-    margin-right: 10px;
-    width: 200px;
-}
+
 
 .search-btn {
     background-color: #ffcc00;
@@ -80,13 +131,50 @@ header {
     background-color: #ffdb4d;
 }
 
-/* Style the user actions */
-.user-actions a {
-    color: #fff;
-    text-decoration: none;
-    margin-left: 10px;
-    font-weight: bold;
+/* Style the slideshow container */
+.slideshow-container {
+    max-width: 80%; /* Adjust as needed */
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
 }
+
+/* Style individual slides */
+.slide {
+    display: none;
+    width: 100%;
+    position: relative;
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space captions to the left and right */
+}
+
+/* Style slide images */
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+/* Style left captions */
+.left-caption {
+    flex: 1; /* Expand to fill available space */
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the background color and opacity as needed */
+    color: #fff;
+    padding: 5px;
+    font-size: 16px;
+    text-align: left;
+}
+
+/* Style right captions */
+.right-caption {
+    flex: 1; /* Expand to fill available space */
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the background color and opacity as needed */
+    color: #fff;
+    padding: 5px;
+    font-size: 16px;
+    text-align: right;
+}
+
+
 
 /* Media query for smaller screens */
 @media screen and (max-width: 768px) {
