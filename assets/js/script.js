@@ -21,3 +21,17 @@ function showSlides() {
 
 showSlides(); // Start the slideshow
 
+// Get the current year and set it in the "currentYear" span
+document.getElementById("currentYear").textContent = new Date().getFullYear();
+
+// Get the user's country/region
+if (window.navigator.languages) {
+    // Modern browsers
+    const userLanguage = window.navigator.languages[0];
+    document.getElementById("countryRegion").textContent = userLanguage;
+} else {
+    // Fallback for older browsers
+    const userLanguage = window.navigator.userLanguage || window.navigator.language;
+    document.getElementById("countryRegion").textContent = userLanguage;
+}
+

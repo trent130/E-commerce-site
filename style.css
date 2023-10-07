@@ -87,6 +87,9 @@
     background-color: #345;
   }
   
+.user-actions a:hover{
+    background-color: #fff;
+}
 
 /* Apply a background color to the body */
 body {
@@ -144,8 +147,6 @@ body {
     display: none;
     width: 100%;
     position: relative;
-    display: flex; /* Use flexbox for layout */
-    justify-content: space-between; /* Space captions to the left and right */
 }
 
 /* Style slide images */
@@ -154,26 +155,143 @@ body {
     height: auto;
 }
 
-/* Style left captions */
-.left-caption {
-    flex: 1; /* Expand to fill available space */
-    background-color: rgba(0, 0, 0, 0.5); /* Adjust the background color and opacity as needed */
-    color: #fff;
-    padding: 5px;
-    font-size: 16px;
-    text-align: left;
+/* Style captions container */
+.caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
 }
 
-/* Style right captions */
-.right-caption {
-    flex: 1; /* Expand to fill available space */
-    background-color: rgba(0, 0, 0, 0.5); /* Adjust the background color and opacity as needed */
-    color: #fff;
-    padding: 5px;
+/* Style left caption button */
+.caption-button-left {
+    background-color: whitesmoke;
+    color: #000000;
     font-size: 16px;
-    text-align: right;
+    cursor: pointer;
+    padding: 20px;
+    transition: background-color 0.3s;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translateY(-50%);
+    backdrop-filter: blur(20px); 
 }
 
+.caption-button-left:hover {
+    background-color: #ffcc00;
+}
+
+/* Style right caption button */
+.caption-button-right {
+    background-color: whitesmoke;
+    color: #000000;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 20px;
+    transition: background-color 0.3s;
+    position: absolute;
+    top: 50%;
+    right: 20%;
+    transform: translateY(-50%);
+    backdrop-filter: blur(20px); 
+}
+
+.caption-button-right:hover {
+    background-color: #ffcc00;
+}
+
+/* Style the footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+/* Style the container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
+}
+
+/* Style the footer logo */
+.footer__logo img {
+    max-width: 100px; /* Adjust the max-width as needed */
+}
+
+/* Style the footer links */
+.footer__links {
+    margin-top: 10px;
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.row_1,
+.row_2,
+.row_3 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer__link {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.footer__link:last-child {
+    margin-bottom: 0;
+}
+
+.footer__link:hover {
+    color: #ffcc00;
+}
+
+/* Style the footer social links */
+.footer__social {
+    margin-top: 10px;
+}
+
+.footer__social-link img {
+    width: 30px; /* Adjust the size of the social media icons */
+    height: auto;
+    margin-right: 20px;
+    transition: opacity 0.3s;
+}
+
+.footer__social-link:last-child {
+    margin-right: 0;
+}
+
+.footer__social-link:hover img {
+    opacity: 0.8; /* Reduce opacity on hover */
+}
+
+/* Style the copyright notice */
+.footer__copyright {
+    margin-top: auto; /* Push the copyright to the bottom */
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+/* Style the country/region information */
+#countryRegion {
+    font-weight: bold;
+    color: #ffcc00;
+}
 
 
 /* Media query for smaller screens */
