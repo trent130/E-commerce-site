@@ -20,6 +20,7 @@
   
   .navbar .menu {
     float: right;
+    margin-top: 20px;
   }
   
   .navbar .menu ul {
@@ -91,6 +92,83 @@
     background-color: #fff;
 }
 
+/* Style the logo in the header */
+.logo img {
+    max-width: 80px; /* Adjust the maximum width as needed */
+    height: auto; /* Maintain the aspect ratio */
+}
+
+/* Center the logo vertically within the header */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+/* Add some margin or padding to the logo if needed */
+.logo img {
+    margin-right: 10px; /* Add right margin for spacing */
+}
+
+/* Reset some default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the product listing section */
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+/* Style individual product articles */
+.product {
+    width: 300px;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product h2 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.product p {
+    font-size: 1rem;
+    color: #777;
+}
+
+.product .price {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.product .add-to-cart {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.product .add-to-cart:hover {
+    background-color: #0056b3;
+}
+
 /* Apply a background color to the body */
 body {
     background-color: #f0f0f0;
@@ -98,7 +176,7 @@ body {
 }
 
 /* Style the container for the header content */
-.container {
+.navcontainer {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -222,7 +300,9 @@ footer {
 
 /* Style the footer logo */
 .footer__logo img {
-    max-width: 100px; /* Adjust the max-width as needed */
+    max-width: 80px; /* Adjust the max-width as needed */
+    height: auto; /* Maintain the aspect ratio */
+    margin-right: 20px;
 }
 
 /* Style the footer links */
@@ -287,11 +367,14 @@ footer {
     opacity: 0.7;
 }
 
-/* Style the country/region information */
+/* Center-align the country/region information within the copyright */
 #countryRegion {
     font-weight: bold;
     color: #ffcc00;
+    display: block; /* Ensure it's on a new line and centered */
+    margin-top: 10px; /* Add some spacing between copyright and country/region */
 }
+
 
 
 /* Media query for smaller screens */
@@ -314,3 +397,77 @@ footer {
         margin-top: 20px;
     }
 }
+/* Reset some default styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the chat container */
+.chat-container {
+    max-width: 400px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the chat header */
+.chat-header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Style the chat messages */
+.chat-messages {
+    max-height: 300px;
+    overflow-y: scroll;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+/* Style individual chat messages */
+.message {
+    margin: 10px 0;
+}
+
+/* Style user messages */
+.user-message {
+    text-align: right;
+    color: #007bff;
+}
+
+/* Style seller messages */
+.seller-message {
+    text-align: left;
+    color: #4caf50;
+}
+
+/* Style the chat input field and send button */
+.chat-input {
+    display: flex;
+    padding: 10px;
+    background-color: #fff;
+}
+
+#message-input {
+    flex-grow: 1;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#send-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+

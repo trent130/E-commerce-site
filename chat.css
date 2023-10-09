@@ -1,0 +1,170 @@
+    /* Styling for the messaging container */
+    #messaging-container {
+        display: flex;
+        justify-content: space-between;
+        height: 100vh;
+      }
+  
+      /* Styling for the users section */
+      #users-section {
+        width: 30%;
+        background-color: #f2f2f2;
+        padding: 20px;
+      }
+  
+      /* Styling for the users header */
+      #users-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+  
+      /* Styling for the search input */
+      #search {
+        width: 70%;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+      }
+  
+      /* Styling for the user profiles */
+      .user-profile {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        cursor: pointer;
+      }
+  
+      /* Styling for the user profile image */
+      .user-profile img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+  
+      /* Styling for the chat section */
+      #chat-section {
+        flex-grow: 1;
+        padding: 20px;
+      }
+  
+      /* Styling for the chat header */
+      #chat-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+  
+      /* Styling for the secondary user profile */
+      #secondary-user-profile {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+      }
+  
+      /* Styling for the chat message display */
+      #message-display {
+        height: 300px;
+        border: 1px solid #ccc;
+        padding: 10px;
+        overflow-y: scroll;
+      }
+  
+      /* Styling for the message input */
+      #message-input {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+      }
+  
+      /* Styling for the message input field */
+      #message {
+        flex-grow: 1;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+      }
+  
+      /* Styling for the send button */
+      #send-button {
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+  
+      /* Styling for the sent message */
+      .sent-message {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-bottom: 10px;
+      }
+  
+      /* Styling for the sent message bubble */
+      .sent-message .message-bubble {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px;
+        border-radius: 20px;
+        max-width: 70%;
+      }
+  
+      /* Styling for the received message */
+      .received-message {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-bottom: 10px;
+      }
+  
+      /* Styling for the received message bubble */
+      .received-message .message-bubble {
+        background-color: #e0e0e0;
+        color: #333;
+        padding: 10px;
+        border-radius: 20px;
+        max-width: 70%;
+      }
+  
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+        margin: 0;
+        padding: 0;
+      }
+  
+      #messaging-container {
+        display: flex;
+        max-width: 800px;
+        margin: 0 auto;
+        background-color: #ffffff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+  
+      #users-menu img,
+      #chat-menu img {
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+      }
+  
+      #user-profiles {
+        display: flex;
+        flex-direction: column;
+      }
+  
+      .user-profile span {
+        font-weight: bold;
+      }
+  
+      #secondary-user-profile {
+        display: none;
+        align-items: center;
+        cursor: pointer;
+      }

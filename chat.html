@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>User Messaging System</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha384-Cf538x2xwksLBtFz6ZNs5n/tzJ/ECDMFm8e6zVFiU0nIbbVYRM3yhLItrFQ7JsM3" crossorigin="anonymous">
+    <link rel="stylesheet" href="chat.css">
+
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+        <div class="navcontainer">
+            <div class="max">
+                <div class="logo">
+                    <img src="assets/images/logo.jpg" alt="Sudplace Logo">
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="chat.html">Chat</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="profile.html">Profile</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="search">
+                <input class="search-bar" type="text" placeholder="Search for anything...">
+                <button class="search-btn">Search</button>
+            </div>
+            <div class="user-actions">
+                <a href="#" class="signin-btn">Sign in</a>
+                <a href="#" class="favorites-btn">
+                    <img src="assets/images/icons/favorite_FILL0_wght400_GRAD0_opsz24.png" alt="">
+                </a>
+                <a href="#" class="cart-btn">
+                    <img src="assets/images/icons/add_shopping_cart_FILL0_wght400_GRAD0_opsz24.png" alt="">
+                </a>
+            </div>
+        </div>
+    </nav>
+</header>
+  <div id="messaging-container">
+    <div id="users-section">
+      <div id="users-header">
+        <h2>Users</h2>
+        <input type="text" id="search" placeholder="Search">
+        <div id="users-menu">
+          <img src="assets/images/icons/menu.png" alt="Menu Icon">
+        </div>
+      </div>
+      <div id="user-profiles">
+        <div class="user-profile">
+          <img src="user1-profile.jpg" alt="User 1 Profile">
+          <span>User 1</span>
+        </div>
+        <div class="user-profile">
+          <img src="user2-profile.jpg" alt="User 2 Profile">
+          <span>User 2</span>
+        </div>
+        <!-- Add more user profiles here -->
+      </div>
+    </div>
+    <div id="chat-section">
+      <div id="chat-header">
+        <div id="secondary-user-profile">
+          <img src="secondary-user-profile.jpg" alt="Secondary User Profile">
+          <span>Secondary User</span>
+          <i class="fas fa-video"></i>
+          <i class="fas fa-phone"></i>
+        </div>
+        <div id="chat-menu">
+          <img src="assets/images/icons/menu.png" alt="Menu Icon">
+        </div>
+      </div>
+      <div id="message-display">
+        <!-- This is where your chat messages will be displayed -->
+      </div>
+      <div id="message-input">
+        <input type="text" id="message" placeholder="Type your message...">
+        <button id="send-button">Send</button>
+      </div>
+    </div>
+  </div>
+  <script>
+ 
+  </script>
+  <script src="assets/js/chat.js"></script>
+</body>
+
+</html>
