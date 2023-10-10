@@ -5,70 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-    body{
-      font-family: Arial, sans-serif;
-      background-color: #f2f2f2;
-      margin: 0;
-      padding: 20px;
-    }
-
-    h1 {
-      color: #333;
-    }
-
-    h2 {
-      color: #666;
-    }
-
-    p {
-      margin-bottom: 10px;
-    }
-
-    form {
-      margin-bottom: 20px;
-    }
-
-    label {
-      display: block;
-      margin-bottom: 5px;
-      font-weight: bold;
-    }
-
-    input[type="text"],
-    input[type="email"],
-    textarea {
-      width: 100%;
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      margin-bottom: 10px;
-    }
-
-    input[type="submit"] {
-      background-color: #333;
-      color: #fff;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-
-    input[type="submit"]:hover {
-      background-color: #555;
-    }
-
-    ul {
-      list-style-type: disc;
-      margin-left: 20px;
-    }
-
-    iframe {
-      width: 100%;
-      height: 400px;
-      border: none;
-    }
-    </style>
 </head>
 <body>
     <header>
@@ -104,50 +40,59 @@
             </div>
         </nav>
     </header>
-    <h1>Contact Us</h1>
+    <main>
+        <section id="contact-info">
+            <h2>Contact Information</h2>
+            <p><strong>Phone:</strong> +123456789</p>
+            <p><strong>Email:</strong> info@example.com</p>
+            <p><strong>Address:</strong> 123 Main Street, City, Country</p>
+        </section>
+
+        <section id="contact-form">
+            <h2>Contact Form</h2>
+            <form action="submit_form.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
     
-    <h2>Contact Information</h2>
-    <p>Phone: +123456789</p>
-    <p>Email: info@example.com</p>
-    <p>Address: 123 Main Street, City, Country</p>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
     
-    <h2>Contact Form</h2>
-    <form action="submit_form.php" method="POST">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required><br><br>
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required><br><br>
     
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="5" required></textarea><br><br>
     
-        <label for="subject">Subject:</label>
-        <input type="text" id="subject" name="subject" required><br><br>
-    
-        <label for="message">Message:</label><br>
-        <textarea id="message" name="message" rows="5" required></textarea><br><br>
-    
-        <input type="submit" value="Submit">
-    </form>
-    
-    <h2>Business Hours</h2>
-    <p>Monday to Friday: 9am - 5pm</p>
-    
-    <h2>FAQ</h2>
-    <p>Q: Can I return an item?</p>
-    <p>A: Yes, you can return an item within 30 days of purchase. Please refer to our <a href="faq.html">FAQ page</a> for
-        more information.</p>
-    
-    <h2>Customer Support</h2>
-    <p>For customer support, you can reach us through:</p>
-    <ul>
-        <li>Phone: +123456789</li>
-        <li>Email: support@example.com</li>
-        <li>Live Chat: Click the chat icon on the bottom right corner of the page</li>
-    </ul>
-    
-    <h2>Location</h2>
-    <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.67890!2dlongitude!3dlatitude!4m15!2m14!1m13!1saddress!4m2!1dlongitude!2dlatitude!5e0!3m2!1sen!2sus!4v1234567890"
-        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+
+        <section id="business-hours">
+            <h2>Business Hours</h2>
+            <p>Monday to Friday: 9am - 5pm</p>
+        </section>
+
+        <section id="faq">
+            <h2>FAQ</h2>
+            <p><strong>Q:</strong> Can I return an item?</p>
+            <p><strong>A:</strong> Yes, you can return an item within 30 days of purchase. Please refer to our <a href="faq.html">FAQ page</a> for more information.</p>
+        </section>
+
+        <section id="customer-support">
+            <h2>Customer Support</h2>
+            <p>For customer support, you can reach us through:</p>
+            <ul>
+                <li><strong>Phone:</strong> +123456789</li>
+                <li><strong>Email:</strong> support@example.com</li>
+                <li><strong>Live Chat:</strong> Click the chat icon on the bottom right corner of the page</li>
+            </ul>
+        </section>
+
+        <section id="location">
+            <h2>Location</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.67890!2dlongitude!3dlatitude!4m15!2m14!1m13!1saddress!4m2!1dlongitude!2dlatitude!5e0!3m2!1sen!2sus!4v1234567890" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+    </main>
     </body>
     
     </html>

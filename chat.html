@@ -4,9 +4,10 @@
 <head>
   <title>User Messaging System</title>
   <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    integrity="sha384-Cf538x2xwksLBtFz6ZNs5n/tzJ/ECDMFm8e6zVFiU0nIbbVYRM3yhLItrFQ7JsM3" crossorigin="anonymous">
-    <link rel="stylesheet" href="chat.css">
+  <link rel="stylesheet" href="chat.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/emoji-picker-element@3.0.0/dist/index.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/autosize.js/4.0.2/autosize.min.js"></script>
 
   <style>
 
@@ -58,11 +59,11 @@
       </div>
       <div id="user-profiles">
         <div class="user-profile">
-          <img src="user1-profile.jpg" alt="User 1 Profile">
+          <img src="assets/images/user_profile_1.jpg" alt="User 1 Profile">
           <span>User 1</span>
         </div>
         <div class="user-profile">
-          <img src="user2-profile.jpg" alt="User 2 Profile">
+          <img src="assets/images/user_profile_2.jpg" alt="User 2 Profile">
           <span>User 2</span>
         </div>
         <!-- Add more user profiles here -->
@@ -73,10 +74,11 @@
         <div id="secondary-user-profile">
           <img src="secondary-user-profile.jpg" alt="Secondary User Profile">
           <span>Secondary User</span>
-          <i class="fas fa-video"></i>
-          <i class="fas fa-phone"></i>
+          
         </div>
         <div id="chat-menu">
+          <img src="assets/images/icons/telephone.png" alt="phone Icon" class="icon">
+          <img src="assets/images/icons/video.png" alt="video Icon" class="icon">
           <img src="assets/images/icons/menu.png" alt="Menu Icon">
         </div>
       </div>
@@ -84,14 +86,27 @@
         <!-- This is where your chat messages will be displayed -->
       </div>
       <div id="message-input">
+        <button id="emoji-button">
+          <img src="assets/images/icons/good-mood-emoticon.png" alt="Emoji Icon">
+      </button>
+      
         <input type="text" id="message" placeholder="Type your message...">
+        <button id="send-files-button">
+          <label for="file-input">
+              <img src="assets/images/icons/attach-file.png" alt="Attach Files Icon">
+          </label>
+          <input type="file" id="file-input" style="display: none;">
+      </button>
+        <button id="voice-input-button">
+            <img src="assets/images/icons/settings_voice_FILL0_wght400_GRAD0_opsz24.png" alt="Voice Input Icon">
+        </button>
+        
         <button id="send-button">Send</button>
-      </div>
+    </div>
+    
+    
     </div>
   </div>
-  <script>
- 
-  </script>
   <script src="assets/js/chat.js"></script>
 </body>
 

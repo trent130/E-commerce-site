@@ -7,6 +7,95 @@
     <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
     <style>
         /* Add any additional inline styles here if needed */
+        /* Footer styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 0;
+  font-size: 14px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer__logo img {
+  width: 100px;
+  height: auto;
+}
+
+.footer__links {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.footer__links .row_1,
+.footer__links .row_2,
+.footer__links .row_3 {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.footer__link {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+.footer__link:hover {
+  color: #007bff; /* Change to your preferred link hover color */
+}
+
+.footer__social {
+  margin-top: 20px;
+}
+
+.footer__social-link {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.footer__social-link img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  transition: opacity 0.3s ease;
+}
+
+.footer__social-link img:hover {
+  opacity: 0.7;
+}
+
+.footer__copyright {
+  font-size: 12px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .footer__links .row_1,
+  .footer__links .row_2,
+  .footer__links .row_3 {
+    flex: 1 0 100%;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+
+  .footer__social {
+    text-align: center;
+  }
+}
+
     </style>
 <body>
     <header>
@@ -31,7 +120,7 @@
                     <button class="search-btn">Search</button>
                 </div>
                 <div class="user-actions">
-                    <a href="#" class="signin-btn">Sign in</a>
+                    <a href="logIn.html" class="signin-btn">Sign in</a>
                     <a href="#" class="favorites-btn">
                         <img src="assets/images/icons/favorite_FILL0_wght400_GRAD0_opsz24.png" alt="">
                     </a>

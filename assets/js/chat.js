@@ -64,3 +64,51 @@
     // Clear the secondary user's profile when no user is selected (for demonstration)
     clearSecondaryUserProfile();
   });
+
+
+  // Check if the browser supports the Web Speech API
+if ('SpeechRecognition' in window || 'webkitSpeechRecognition' in window) {
+  const recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
+  const voiceInputButton = document.getElementById('voice-input-button');
+  const messageInput = document.getElementById('message');
+
+  voiceInputButton.addEventListener('click', () => {
+      recognition.start();
+
+      recognition.onresult = (event) => {
+          const transcript = event.results[0][0].transcript;
+          messageInput.value += transcript;
+      };
+
+      recognition.onend = () => {
+          recognition.stop();
+      };
+
+      recognition.onerror = (event) => {
+          console.error(event.error);
+          recognition.stop();
+      };
+  });
+} else {
+  // Web Speech API is not supported in this browser
+  console.error('Web Speech API is not supported in this browser.');
+}
+
+// Find the emoji button and message input field
+const emojiButton = document.getElementById('emoji-button');
+const messageInput = document.getElementById('message');
+
+// Initialize the emoji picker
+const picker = new EmojiPicker();
+
+// Add a click event listener to the emoji button
+emojiButton.addEventListener('click', () => {
+    // Open the emoji picker
+    picker.openPicker();
+
+    // Handle emoji selection
+    picker.addEventListener('emoji-click', (event) => {
+        // Insert the selected emoji into the message input
+        messageInput.value += event.detail.emoji;
+    });
+});
