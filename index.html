@@ -7,95 +7,6 @@
     <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
     <style>
         /* Add any additional inline styles here if needed */
-        /* Footer styles */
-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 40px 0;
-  font-size: 14px;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
-.footer__logo img {
-  width: 100px;
-  height: auto;
-}
-
-.footer__links {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 20px;
-}
-
-.footer__links .row_1,
-.footer__links .row_2,
-.footer__links .row_3 {
-  flex: 1;
-  padding: 0 20px;
-}
-
-.footer__link {
-  color: #fff;
-  text-decoration: none;
-  display: block;
-  margin-bottom: 10px;
-  transition: color 0.3s ease;
-}
-
-.footer__link:hover {
-  color: #007bff; /* Change to your preferred link hover color */
-}
-
-.footer__social {
-  margin-top: 20px;
-}
-
-.footer__social-link {
-  display: inline-block;
-  margin-right: 20px;
-}
-
-.footer__social-link img {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  transition: opacity 0.3s ease;
-}
-
-.footer__social-link img:hover {
-  opacity: 0.7;
-}
-
-.footer__copyright {
-  font-size: 12px;
-  margin-top: 20px;
-  text-align: center;
-}
-
-/* Media queries for responsiveness */
-@media (max-width: 768px) {
-  .footer__links .row_1,
-  .footer__links .row_2,
-  .footer__links .row_3 {
-    flex: 1 0 100%;
-    margin-bottom: 20px;
-    padding: 0;
-  }
-
-  .footer__social {
-    text-align: center;
-  }
-}
-
     </style>
 <body>
     <header>
@@ -132,62 +43,84 @@ footer {
         </nav>
     </header>
     
-    <main>
-        <div class="slideshow-container">
-            <div class="slide">
-                <div class="captions">
-                    <button class="caption-button-left">Login</button>
-                    <button class="caption-button-right">Register</button>
-                </div>
-                <img src="assets/images/section_1.jpg" alt="Image 3">
-            </div>
-            <div class="slide">
-                <div class="captions">
-                    <button class="caption-button-left">Login</button>
-                    <button class="caption-button-right">Register</button>
-                </div>
-                <img src="assets/images/section_2.jpg" alt="Image 3">
-            </div>
-            <div class="slide">
-                <div class="captions">
-                    <button class="caption-button-left">Login</button>
-                    <button class="caption-button-right">Register</button>
-                </div>
-                <img src="assets/images/section_3.jpg" alt="Image 3">
+       <!-- Hero Section -->
+       <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Your Student Marketplace</h1>
+            <p>Buy, Sell, and Connect with Fellow Students</p>
+            <a href="#" class="cta-button">Get Started</a>
+        </div>
+    </section>
+
+    <!-- Search and Filter Section -->
+    <section class="search-section">
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search for textbooks, electronics, and more...">
+            <button id="search-button">Search</button>
+        </div>
+        <div class="filter-options">
+            <label for="category">Filter by Category:</label>
+            <select id="category" name="category">
+                <option value="all">All Categories</option>
+                <option value="books">Books</option>
+                <option value="electronics">Electronics</option>
+                <!-- Add more categories as needed -->
+            </select>
+        </div>
+    </section>
+
+    <!-- Featured Listings Section -->
+    <section class="featured-listings">
+        <h2>Featured Listings</h2>
+        <div class="listing-card">
+            <img src="listing1.jpg" alt="Listing 1">
+            <div class="listing-details">
+                <h3>Textbook - Biology 101</h3>
+                <p class="price">$30</p>
+                <button class="view-listing-button">View Listing</button>
             </div>
         </div>
-    
+        <div class="listing-card">
+            <img src="listing2.jpg" alt="Listing 2">
+            <div class="listing-details">
+                <h3>Laptop - Dell Inspiron</h3>
+                <p class="price">$500</p>
+                <button class="view-listing-button">View Listing</button>
+            </div>
+        </div>
+        <!-- Add more featured listings here -->
+    </section>
 
-        <section class="product-list">
-            <article class="product">
-                <img src="assets/images/product_1.jpg" alt="Product 1">
-                <h2>Product 1</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <span class="price">$19.99</span>
-                <button class="add-to-cart">Add to Cart</button>
-            </article>
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+        <h2>How It Works</h2>
+        <div class="step">
+            <img src="step1-icon.png" alt="Step 1 Icon">
+            <p>Create an account to start buying or selling items.</p>
+        </div>
+        <div class="step">
+            <img src="step2-icon.png" alt="Step 2 Icon">
+            <p>Explore listings and connect with other students.</p>
+        </div>
+        <div class="step">
+            <img src="step3-icon.png" alt="Step 3 Icon">
+            <p>Securely buy or sell items directly on the platform.</p>
+        </div>
+    </section>
 
-            <article class="product">
-                <img src="assets/images/product_2.jpg" alt="Product 1">
-                <h2>Product 1</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <span class="price">$25.99</span>
-                <button class="add-to-cart">Add to Cart</button>
-            </article>
-
-            <article class="product">
-                <img src="assets/images/product_3.jpg" alt="Product 1">
-                <h2>Product 1</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <span class="price">$29.99</span>
-                <button class="add-to-cart">Add to Cart</button>
-            </article>
-
-
-            <!-- Add more product articles here -->
-        </section>
-    </main>
-
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <h2>What Students Are Saying</h2>
+        <div class="testimonial">
+            <p>"This marketplace made it easy for me to find affordable textbooks. Highly recommended!"</p>
+            <p class="author">- Emily, Biology Major</p>
+        </div>
+        <div class="testimonial">
+            <p>"Selling my old electronics here was a breeze. Great platform for students!"</p>
+            <p class="author">- Alex, Computer Science</p>
+        </div>
+        <!-- Add more testimonials as needed -->
+    </section>
 
     <footer>
         <div class="container">
