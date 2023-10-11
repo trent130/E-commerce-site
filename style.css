@@ -275,20 +275,23 @@ footer {
         flex: 1 1 100%;
     }
 }
+
+/*header styles*/
 header {
-    background-color: #ffffff;
-    padding: 20px 0;
+    background-color: #915f5f;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   
   .navbar {
-    max-width: 1200px;
     margin: 0 auto;
+    margin: 5px;
+    justify-content: space-between;
+    background-color: antiquewhite;
   }
   
   .navcontainer {
     display: flex;
-    justify-content: space-between;
+    justify-content: safe center;
     align-items: center;
   }
   
@@ -308,6 +311,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-left: 10px;
   }
   
   .menu ul {
@@ -360,7 +364,6 @@ header {
   
   .user-actions {
     display: flex;
-    justify-content: space-between;
     align-items: center;
   }
   
