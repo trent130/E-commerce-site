@@ -405,3 +405,292 @@ header {
     }
   }
   
+/*styles for the about page*/
+/* Styling for the main section */
+main {
+    background-color: #f5f5f5;
+    padding: 40px 20px;
+  }
+  
+  /* Styling for individual sections */
+  .our-story-heading,
+  .our-mission-heading,
+  .sets-us-apart-heading,
+  .why-choose-heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .our-story-description,
+  .our-mission-description,
+  .sets-us-apart-list,
+  .why-choose-list {
+    line-height: 1.6;
+  }
+  
+  /* Styling for strong elements within sections */
+  strong {
+    font-weight: bold;
+  }
+  
+  /* Styling for feature headings within lists */
+  .why-choose-feature,
+  .sets-us-apart-feature {
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  /* Styling for specific sections */
+  .our-story-section,
+  .our-mission-section,
+  .sets-us-apart-section,
+  .why-choose-section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Styling for lists */
+  ul.why-choose-list,
+  ul.sets-us-apart-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  /* Styling for individual features in lists */
+  ul.why-choose-list li,
+  ul.sets-us-apart-list li {
+    margin-bottom: 10px;
+  }
+/*styles for the contact page*/
+  /*contact us page*/
+  /* Main section styles */
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the contact information section */
+.contact-page-info {
+    text-align: left;
+    margin-bottom: 40px;
+  }
+  
+  /* Style for the contact information heading */
+  .contact-page-info h2 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Style for the contact information paragraphs */
+  .contact-page-info p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+  
+  /* Style for the contact information strong tags */
+  .contact-page-info strong {
+    font-weight: bold;
+  }
+
+/* Contact form styles */
+#contact-form {
+    margin-top: 20px;
+}
+/* Style for the contact form section */
+.contact-page-form {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  /* Style for the contact form heading */
+  .contact-page-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Style for the contact form labels */
+  .contact-page-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  
+  /* Style for the contact form inputs */
+  .contact-page-form input[type="text"],
+  .contact-page-form input[type="email"],
+  .contact-page-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Style for the contact form submit button */
+  .contact-page-form input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Style for the contact form submit button on hover */
+  .contact-page-form input[type="submit"]:hover {
+    background-color: #555;
+  }
+  
+  /* Style for the contact form input and textarea focus */
+  .contact-page-form input[type="text"]:focus,
+  .contact-page-form input[type="email"]:focus,
+  .contact-page-form textarea:focus {
+    outline: none;
+    border-color: #555;
+  }
+  
+  /* Style for the contact form input and textarea error state */
+  .contact-page-form input[type="text"]:invalid,
+  .contact-page-form input[type="email"]:invalid,
+  .contact-page-form textarea:invalid {
+    border-color: red;
+  }
+  
+  /* Style for the contact form error message */
+  .contact-page-form .error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  /* Style for the contact form success message */
+  .contact-page-form .success-message {
+    color: green;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+
+  /* Style for the business hours section */
+.contact-page-hours {
+    text-align: left;
+    margin-bottom: 40px;
+  }
+  
+  /* Style for the business hours heading */
+  .contact-page-hours h2 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Style for the business hours paragraph */
+  .contact-page-hours p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+  
+  /* Style for the FAQ section */
+.contact-page-faq {
+    text-align: left;
+    margin-bottom: 40px;
+  }
+  
+  /* Style for the FAQ heading */
+  .contact-page-faq h2 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Style for the FAQ question */
+  .contact-page-faq .faq-question p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  /* Style for the FAQ answer */
+  .contact-page-faq .faq-answer {
+    display: none;
+  }
+  
+  /* Style for the FAQ link */
+  .contact-page-faq a {
+    color: #333;
+    text-decoration: underline;
+  }
+  
+  /* Style for the FAQ strong tags */
+  .contact-page-faq strong {
+    font-weight: bold;
+  }
+  
+/* Style for the customer support section */
+.contact-page-support {
+    text-align: left;
+    margin-bottom: 40px;
+  }
+  
+  /* Style for the customer support heading */
+  .contact-page-support h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Style for the customer support paragraph */
+  .contact-page-support p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+  
+  /* Style for the customer support list */
+  .contact-page-support ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  /* Style for the customer support list items */
+  .contact-page-support li {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+  
+  /* Style for the customer support strong tags */
+  .contact-page-support strong {
+    font-weight: bold;
+  }
+  
+  /* Style for the location section */
+  .contact-page-location {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  /* Style for the location heading */
+  .contact-page-location h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Style for the location map */
+  .contact-page-location iframe {
+    width: 100%;
+    height: 450px;
+    border: 0;
+  }

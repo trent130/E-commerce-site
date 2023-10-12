@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="contact.css">
 </head>
 <body>
     <header>
@@ -75,8 +74,12 @@
     
         <section class="contact-page-faq">
             <h2>FAQ</h2>
-            <p><strong>Q:</strong> Can I return an item?</p>
-            <p><strong>A:</strong> Yes, you can return an item within 30 days of purchase. Please refer to our <a href="faq.html">FAQ page</a> for more information.</p>
+            <div class="faq-question">
+                <p><strong>Q:</strong> Can I return an item?</p>
+                <div class="faq-answer">
+                    <p><strong>A:</strong> Yes, you can return an item within 30 days of purchase. Please refer to our <a href="faq.html">FAQ page</a> for more information.</p>
+                </div>
+            </div>
         </section>
     
         <section class="contact-page-support">
@@ -94,7 +97,18 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.67890!2dlongitude!3dlatitude!4m15!2m14!1m13!1saddress!4m2!1dlongitude!2dlatitude!5e0!3m2!1sen!2sus!4v1234567890" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </section>
     </main>
-   
+   <script>
+    document.addEventListener("DOMContentLoaded", function() {
+  var faqQuestions = document.querySelectorAll(".faq-question");
+
+  faqQuestions.forEach(function(question) {
+    question.addEventListener("click", function() {
+      var answer = this.querySelector(".faq-answer");
+      answer.style.display = answer.style.display === "none" ? "block" : "none";
+    });
+  });
+});
+   </script>
     </body>
     
     </html>
