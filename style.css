@@ -401,8 +401,9 @@ header {
   }
   
   .menu a:hover {
-    background-color: #ffffff;
+    background-color: #343434;
     border-radius: 15%;
+    color: wheat;
   }
   
   .search {
@@ -448,8 +449,9 @@ header {
   }
   
   .user-actions a:hover {
-    background-color: #a78383;
-    border-radius: 50%;
+    background-color: #343434;
+    color: wheat;
+    border-radius: 15%;
   }
   
   .user-actions img {
