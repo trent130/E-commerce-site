@@ -1,159 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sudplace</title>
-    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
-    <style>
-        /* Add any additional inline styles here if needed */
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sudplace</title>
+  <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
+  <style>
+    /* Add any additional inline styles here if needed */
+  </style>
+
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="navcontainer">
-                <div class="max">
-                    <div class="logo">
-                        <img src="assets/images/logo.jpg" alt="Sudplace Logo">
-                    </div>
-                    <div class="menu">
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="chat.html">Chat</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                            <li><a href="profile.html">Profile</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="search">
-                    <input class="search-bar" type="text" placeholder="Search for anything...">
-                    <button class="search-btn">Search</button>
-                </div>
-                <div class="user-actions">
-                    <a href="#" class="signin-btn">Sign in</a>
-                    <a href="#" class="favorites-btn">
-                        <img src="assets/images/icons/favorite_FILL0_wght400_GRAD0_opsz24.png" alt="">
-                    </a>
-                    <a href="#" class="cart-btn">
-                        <img src="assets/images/icons/add_shopping_cart_FILL0_wght400_GRAD0_opsz24.png" alt="">
-                    </a>
-                </div>
-            </div>
-        </nav>
-    </header>
-
-    <main class="profile-page">
-      <section class="user-info">
-          <img src="assets/images/kevin-chin-pymraRrUNx0-unsplash.jpg" alt="User Profile Picture">
-          <h1>John Doe</h1>
-          <p>Student at University XYZ</p>
-          <p>Email: john.doe@example.com</p>
-          <p>Joined: January 2022</p>
-          <button>Edit Profile</button>
-      </section>
-      <section class="user-listings">
-          <h2>My Listings</h2>
-          <ul>
-              <li>
-                  <img src="listing_image_1.jpg" alt="Listing Image">
-                  <h3>Textbook - Biology 101</h3>
-                  <p>Price: $30</p>
-                  <button>Edit Listing</button>
-              </li>
-              <li>
-                  <img src="listing_image_2.jpg" alt="Listing Image">
-                  <h3>Laptop - Dell Inspiron</h3>
-                  <p>Price: $500</p>
-                  <button>Edit Listing</button>
-              </li>
-              <!-- Add more listings here -->
-          </ul>
-          <form class="add-listing-form">
-            <h2 class="add-listing-heading">Add Listing</h2>
-            <label for="listing-title" class="listing-label">Title:</label>
-            <input type="text" id="listing-title" name="title" class="listing-input" required><br><br>
-            <label for="listing-category" class="listing-label">Category:</label>
-            <select id="listing-category" name="category" class="listing-select" required>
-              <option value="">Select a category</option>
-              <option value="electronics">Electronics</option>
-              <option value="furniture">Furniture</option>
-              <option value="books">Books</option>
-              <!-- Add more category options here -->
-            </select><br><br>
-            <label for="listing-price" class="listing-label">Price:</label>
-            <input type="radio" id="listing-price-fixed" name="price-option" value="fixed" checked class="listing-radio">
-            <label for="listing-price-fixed" class="listing-radio-label">Fixed</label>
-            <input type="radio" id="listing-price-negotiable" name="price-option" value="negotiable" class="listing-radio">
-            <label for="listing-price-negotiable" class="listing-radio-label">Negotiable</label>
-            <input type="radio" id="listing-price-custom" name="price-option" value="custom" class="listing-radio">
-            <label for="listing-price-custom" class="listing-radio-label">Custom</label><br><br>
-            <label for="listing-price-input" class="listing-label">Price Amount:</label>
-            <input type="text" id="listing-price-input" name="price-input" disabled class="listing-input"><br><br>
-            <input type="submit" value="Submit" class="submit-button">
-          </form>
-  </main>
-  <script>
-    const priceOptionRadio = document.querySelectorAll('input[name="price-option"]');
-const priceInput = document.getElementById('listing-price-input');
-
-priceOptionRadio.forEach((radio) => {
-  radio.addEventListener('change', () => {
-    if (radio.value === 'custom') {
-      priceInput.disabled = false;
-    } else {
-      priceInput.disabled = true;
-    }
-  });
-});
-  </script>
-    <footer>
-        <div class="container">
-          <div class="footer__logo">
+  <header>
+    <nav class="navbar">
+      <div class="navcontainer">
+        <div class="max">
+          <div class="logo">
             <img src="assets/images/logo.jpg" alt="Sudplace Logo">
           </div>
-          <div class="footer__links">
-            <div class="row_1">
-                <a href="#" class="footer__link">About</a>
-                <a href="#" class="footer__link">Contact</a>
-                <a href="#" class="footer__link">Terms</a>
-                <a href="#" class="footer__link">Privacy</a>
-            </div>
-            <div class="row_2">
-                <a href="#" class="footer__link">Shopping Cart</a>
-                <a href="#" class="footer__link">Checkout</a>
-                <a href="#" class="footer__link">Return Policy</a>
-                <a href="#" class="footer__link">Shipping Policy</a>
-            </div>
-            <div class="row_3">
-                <a href="#" class="footer__link">My Account</a>
-                <a href="#" class="footer__link">Wish List</a>
-                <a href="#" class="footer__link">Gift Cards</a>
-                <a href="#" class="footer__link">Help Center</a>
-            </div>
-           
+          <div class="menu">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="chat.html">Chat</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="profile.html">Profile</a></li>
+            </ul>
           </div>
-          <div class="footer__social ">
-            <a href="#" class="footer__social-link">
-              <img src="assets/images/Facebook_Logo_Primary.png" alt="">
-            </a>
-            <a href="#" class="footer__social-link">
-              <img src="assets/images/instagram.png" alt="">
-            </a>
-            <a href="#" class="footer__social-link">
-              <img src="assets/images/X-logo-Twitter.jpg" alt="">
-            </a>
-            <a href="#" class="footer__social-link">
-              <img src="assets/images/youtube.png" alt="">
-            </a>
-          </div>
-          <div class="footer__copyright">
-            &copy; <span id="currentYear"></span> Sudplace. All rights reserved.
-            <br>
-            Country/Region: <span id="countryRegion"></span>
         </div>
+        <div class="search">
+          <input class="search-bar" type="text" placeholder="Search for anything...">
+          <button class="search-btn">Search</button>
         </div>
-      </footer>      
-    <script src="assets/js/script.js"></script>
+        <div class="user-actions">
+          <a href="#" class="signin-btn">Sign in</a>
+          <a href="#" class="favorites-btn">
+            <img src="assets/images/icons/favorite_FILL0_wght400_GRAD0_opsz24.png" alt="">
+          </a>
+          <a href="#" class="cart-btn">
+            <img src="assets/images/icons/add_shopping_cart_FILL0_wght400_GRAD0_opsz24.png" alt="">
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="profile-page">
+    <section class="user-info">
+      <img src="assets/images/kevin-chin-pymraRrUNx0-unsplash.jpg" alt="User Profile Picture">
+      <h1>John Doe</h1>
+      <p>Student at University XYZ</p>
+      <p>Email: john.doe@example.com</p>
+      <p>Joined: January 2022</p>
+      <button>Edit Profile</button>
+    </section>
+    <section class="user-listings">
+      <h2>My Listings</h2>
+      <ul>
+        <li>
+          <img src="listing_image_1.jpg" alt="Listing Image">
+          <h3>Textbook - Biology 101</h3>
+          <p>Price: $30</p>
+          <button>Edit Listing</button>
+        </li>
+        <li>
+          <img src="listing_image_2.jpg" alt="Listing Image">
+          <h3>Laptop - Dell Inspiron</h3>
+          <p>Price: $500</p>
+          <button>Edit Listing</button>
+        </li>
+        <!-- Add more listings here -->
+      </ul>
+      <form class="add-listing-form">
+        <h2 class="add-listing-heading">Add Listing</h2>
+        <label for="listing-title" class="listing-label">Title:</label>
+        <input type="text" id="listing-title" name="title" class="listing-input" required><br><br>
+        <label for="listing-category" class="listing-label">Category:</label>
+        <select id="listing-category" name="category" class="listing-select" required>
+          <option value="">Select a category</option>
+          <option value="electronics">Electronics</option>
+          <option value="furniture">Furniture</option>
+          <option value="books">Books</option>
+          <!-- Add more category options here -->
+        </select><br><br>
+        <label for="listing-price" class="listing-label">Price:</label>
+        <input type="radio" id="listing-price-fixed" name="price-option" value="fixed" checked class="listing-radio">
+        <label for="listing-price-fixed" class="listing-radio-label">Fixed</label>
+        <input type="radio" id="listing-price-negotiable" name="price-option" value="negotiable" class="listing-radio">
+        <label for="listing-price-negotiable" class="listing-radio-label">Negotiable</label>
+        <input type="radio" id="listing-price-custom" name="price-option" value="custom" class="listing-radio">
+        <label for="listing-price-custom" class="listing-radio-label">Custom</label><br><br>
+        <label for="listing-photo" class="listing-label">Photo:</label>
+        <input type="file" id="listing-photo" name="photo" accept="image/*" class="listing-input">
+        <label for="listing-price-input" class="listing-label">Price Amount:</label>
+        <input type="text" id="listing-price-input" name="price-input" disabled class="listing-input"><br><br>
+        <input type="submit" value="Submit" class="submit-button">
+      </form>
+  </main>
+  <script>
+// ... (existing JavaScript code) ...
+
+// Get a reference to the photo input field
+const photoInput = document.getElementById('listing-photo');
+
+// Add an event listener to the form to handle form submission
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+
+  // Get values from form elements
+  const title = document.getElementById('listing-title').value;
+  const category = document.getElementById('listing-category').value;
+  const priceOption = document.querySelector('input[name="price-option"]:checked').value;
+  const price = priceOption === 'custom' ? priceInput.value : priceOption;
+  
+  // Get the selected photo file
+  const photoFile = photoInput.files[0];
+
+  // Create a FormData object to send the form data, including the photo file
+  const formData = new FormData();
+  formData.append('title', title);
+  formData.append('category', category);
+  formData.append('priceOption', priceOption);
+  formData.append('price', price);
+  formData.append('photo', photoFile);
+
+  // Perform any further actions with the form data (e.g., send it to the server)
+  console.log('Title:', title);
+  console.log('Category:', category);
+  console.log('Price Option:', priceOption);
+  console.log('Price:', price);
+  console.log('Photo:', photoFile);
+
+  // You can also send the form data to the server using an AJAX request
+  // ...
+
+  // Reset the form for the next listing
+  form.reset();
+});
+
+  </script>
+  <footer>
+    <div class="container">
+      <div class="footer__logo">
+        <img src="assets/images/logo.jpg" alt="Sudplace Logo">
+      </div>
+      <div class="footer__links">
+        <div class="row_1">
+          <a href="#" class="footer__link">About</a>
+          <a href="#" class="footer__link">Contact</a>
+          <a href="#" class="footer__link">Terms</a>
+          <a href="#" class="footer__link">Privacy</a>
+        </div>
+        <div class="row_2">
+          <a href="#" class="footer__link">Shopping Cart</a>
+          <a href="#" class="footer__link">Checkout</a>
+          <a href="#" class="footer__link">Return Policy</a>
+          <a href="#" class="footer__link">Shipping Policy</a>
+        </div>
+        <div class="row_3">
+          <a href="#" class="footer__link">My Account</a>
+          <a href="#" class="footer__link">Wish List</a>
+          <a href="#" class="footer__link">Gift Cards</a>
+          <a href="#" class="footer__link">Help Center</a>
+        </div>
+
+      </div>
+      <div class="footer__social ">
+        <a href="#" class="footer__social-link">
+          <img src="assets/images/Facebook_Logo_Primary.png" alt="">
+        </a>
+        <a href="#" class="footer__social-link">
+          <img src="assets/images/instagram.png" alt="">
+        </a>
+        <a href="#" class="footer__social-link">
+          <img src="assets/images/X-logo-Twitter.jpg" alt="">
+        </a>
+        <a href="#" class="footer__social-link">
+          <img src="assets/images/youtube.png" alt="">
+        </a>
+      </div>
+      <div class="footer__copyright">
+        &copy; <span id="currentYear"></span> Sudplace. All rights reserved.
+        <br>
+        Country/Region: <span id="countryRegion"></span>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/script.js"></script>
 </body>
+
 </html>

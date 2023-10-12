@@ -44,13 +44,13 @@
     </header>
     
        <!-- Hero Section -->
-       <section class="hero">
+       <section class="hero" background="assets/images/background_1.jpg">
         <div class="hero-content">
-            <h1>Welcome to Your Student Marketplace</h1>
-            <p>Buy, Sell, and Connect with Fellow Students</p>
-            <a href="#" class="cta-button">Get Started</a>
+          <h1>Welcome to Your Student Marketplace</h1>
+          <p>Buy, Sell, and Connect with Fellow Students</p>
+          <a href="#" class="cta-button">Get Started</a>
         </div>
-    </section>
+      </section>
 
     <!-- Search and Filter Section -->
     <section class="search-section">
@@ -64,6 +64,7 @@
                 <option value="all">All Categories</option>
                 <option value="books">Books</option>
                 <option value="electronics">Electronics</option>
+                <option value="furniture">furniture</option>
                 <!-- Add more categories as needed -->
             </select>
         </div>
@@ -72,38 +73,48 @@
     <!-- Featured Listings Section -->
     <section class="featured-listings">
         <h2>Featured Listings</h2>
-        <div class="listing-card">
-            <img src="listing1.jpg" alt="Listing 1">
-            <div class="listing-details">
-                <h3>Textbook - Biology 101</h3>
-                <p class="price">$30</p>
-                <button class="view-listing-button">View Listing</button>
+        <div class="list_container">
+            <div class="listing-card">
+                <img src="assets/images/demo_1.jpg" alt="Listing 1">
+                <div class="listing-details">
+                    <h3>Textbook - Biology 101</h3>
+                    <p class="price">$30</p>
+                    <button class="view-listing-button">View Listing</button>
+                </div>
             </div>
-        </div>
-        <div class="listing-card">
-            <img src="listing2.jpg" alt="Listing 2">
-            <div class="listing-details">
-                <h3>Laptop - Dell Inspiron</h3>
-                <p class="price">$500</p>
-                <button class="view-listing-button">View Listing</button>
+            <div class="listing-card">
+                <img src="assets/images/demo_1.jpg" alt="Listing 2">
+                <div class="listing-details">
+                    <h3>Laptop -Dell Inspiron</h3>
+                    <p class="price">$500</p>
+                    <button class="view-listing-button">View Listing</button>
+                </div>
             </div>
+            <div class="listing-card">
+                <img src="assets/images/demo_1.jpg" alt="Listing 2">
+                <div class="listing-details">
+                    <h3>Laptop - Hp Pavillion</h3>
+                    <p class="price">$800</p>
+                    <button class="view-listing-button">View Listing</button>
+                </div>
+            </div>
+            <!-- Add more featured listings here -->
         </div>
-        <!-- Add more featured listings here -->
-    </section>
+        </section>
 
     <!-- How It Works Section -->
     <section class="how-it-works">
         <h2>How It Works</h2>
         <div class="step">
-            <img src="step1-icon.png" alt="Step 1 Icon">
+            <img src="assets/images/icons/new-user.png" alt="Step 1 Icon">
             <p>Create an account to start buying or selling items.</p>
         </div>
         <div class="step">
-            <img src="step2-icon.png" alt="Step 2 Icon">
+            <img src="assets/images/icons/connections.png" alt="Step 2 Icon">
             <p>Explore listings and connect with other students.</p>
         </div>
         <div class="step">
-            <img src="step3-icon.png" alt="Step 3 Icon">
+            <img src="assets/images/icons/buy.png" alt="Step 3 Icon">
             <p>Securely buy or sell items directly on the platform.</p>
         </div>
     </section>
@@ -111,19 +122,29 @@
     <!-- Testimonials Section -->
     <section class="testimonials">
         <h2>What Students Are Saying</h2>
-        <div class="testimonial">
-            <p>"This marketplace made it easy for me to find affordable textbooks. Highly recommended!"</p>
-            <p class="author">- Emily, Biology Major</p>
+    
+        <div class="testimony_container">
+            <div class="testimonial">
+                <img src="assets/images/demo_3.jpg" alt="">
+                <p>"This marketplace made it easy for me to find affordable textbooks. Highly recommended!"</p>
+                <p class="author">- Emily, Biology Major</p>
+            </div>
+            <div class="testimonial">
+                <img src="assets/images/demo_2.jpg" alt="">
+                <p>"Selling my old electronics here was a breeze. Great platform for students!"</p>
+                <p class="author">- Alex, Computer Science</p>
+            </div>
+            <div class="testimonial">
+                <img src="assets/images/demo_2.jpg" alt="">
+                <p>"Selling my old furnitures here was a breeze. Great platform for students!"</p>
+                <p class="author">- Alex, Computer Science</p>
+            </div>
+            <!-- Add more testimonials as needed -->
         </div>
-        <div class="testimonial">
-            <p>"Selling my old electronics here was a breeze. Great platform for students!"</p>
-            <p class="author">- Alex, Computer Science</p>
-        </div>
-        <!-- Add more testimonials as needed -->
     </section>
 
     <footer>
-        <div class="container">
+        <div class="footer_container">
           <div class="footer__logo">
             <img src="assets/images/logo.jpg" alt="Sudplace Logo">
           </div>
