@@ -69,32 +69,29 @@
               </li>
               <!-- Add more listings here -->
           </ul>
-          <form>
-            <h2>Add Listing</h2>
-            <label for="listing-title">Title:</label>
-            <input type="text" id="listing-title" name="title" required><br><br>
-            <label for="listing-category">Category:</label>
-            <select id="listing-category" name="category" required>
+          <form class="add-listing-form">
+            <h2 class="add-listing-heading">Add Listing</h2>
+            <label for="listing-title" class="listing-label">Title:</label>
+            <input type="text" id="listing-title" name="title" class="listing-input" required><br><br>
+            <label for="listing-category" class="listing-label">Category:</label>
+            <select id="listing-category" name="category" class="listing-select" required>
               <option value="">Select a category</option>
               <option value="electronics">Electronics</option>
               <option value="furniture">Furniture</option>
               <option value="books">Books</option>
               <!-- Add more category options here -->
             </select><br><br>
-            <label for="listing-price">Price:</label>
-            <input type="radio" id="listing-price-fixed" name="price-option" value="fixed" checked>
-            <label for="listing-price-fixed">Fixed</label>
-            <input type="radio" id="listing-price-negotiable" name="price-option" value="negotiable">
-            <label for="listing-price-negotiable">Negotiable</label>
-            <input type="radio" id="listing-price-custom" name="price-option" value="custom">
-            <label for="listing-price-custom">Custom</label><br><br>
-            <label for="listing-price-input">Price Amount:</label>
-            <input type="text" id="listing-price-input" name="price-input" disabled><br><br>
-            <label for="listing-image">Image:</label>
-            <input type="file" id="listing-image" name="image"><br><br>
-            <input type="submit" value="Submit">
+            <label for="listing-price" class="listing-label">Price:</label>
+            <input type="radio" id="listing-price-fixed" name="price-option" value="fixed" checked class="listing-radio">
+            <label for="listing-price-fixed" class="listing-radio-label">Fixed</label>
+            <input type="radio" id="listing-price-negotiable" name="price-option" value="negotiable" class="listing-radio">
+            <label for="listing-price-negotiable" class="listing-radio-label">Negotiable</label>
+            <input type="radio" id="listing-price-custom" name="price-option" value="custom" class="listing-radio">
+            <label for="listing-price-custom" class="listing-radio-label">Custom</label><br><br>
+            <label for="listing-price-input" class="listing-label">Price Amount:</label>
+            <input type="text" id="listing-price-input" name="price-input" disabled class="listing-input"><br><br>
+            <input type="submit" value="Submit" class="submit-button">
           </form>
-      </section>
   </main>
   <script>
     const priceOptionRadio = document.querySelectorAll('input[name="price-option"]');
