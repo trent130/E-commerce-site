@@ -1,0 +1,35 @@
+<div class="chatbot-icon" onclick="toggleChatbot()">
+    <img src="assets/images/icons/chatbot_5291454.png" alt="Chatbot Icon" width="50" height="50">
+</div>
+
+<div class="chatbot" id="chatbot-container" style="display: none;">
+    <div class="chatbot-header">
+        <h2>Chatbot</h2>
+        <a href="#" onclick="closeChatbot()">
+            <img src="assets/images/icons/closed_caption_FILL0_wght400_GRAD0_opsz24.png" alt="Close Icon" width="30"
+                height="30">
+        </a>
+    </div>
+    <div class="chatbot-body">
+        <div class="chatbot-messages">
+            <div class="chatbot-message">
+                <p>Hi! I'm the Sudplace chatbot. How can I help you today?</p>
+            </div>
+        </div>
+        <div class="chatbot-input">
+            <input type="text" id="chatbot-input" placeholder="Type your message here...">
+            <button id="chatbot-send">Send</button>
+        </div>
+    </div>
+</div><script>
+    function toggleChatbot() {
+     var chatbotContainer = document.getElementById("chatbot-container");
+     chatbotContainer.style.display = (chatbotContainer.style.display === "none") ? "block" : "none";
+}
+
+     function closeChatbot() {
+         var chatbotContainer = document.getElementById("chatbot-container");
+         chatbotContainer.style.display = "none";
+     }
+
+     </script>
