@@ -48,7 +48,10 @@
     // Function to clear the secondary user's profile
     function clearSecondaryUserProfile() {
       const secondaryUserProfile = document.getElementById("secondary-user-profile");
-      secondaryUserProfile.style.display = "none";
+      secondaryUserProfile.innerHTML = ` 
+      <img src="assets/images/user_profile_1.jpg" alt="Secondary User Profile">
+      <span></span>`;
+      secondaryUserProfile.style.display = "block";
     }
 
     // Add a click event listener to user profiles for setting the secondary user's profile

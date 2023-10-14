@@ -18,17 +18,13 @@ body {
     text-align: center;
 }
 
-.hero-background {
-    background-image: url('background_1.jpg'); 
+.hero {
+    background-image: url('assets/images/background_1.jpg'); 
     background-size: cover;
     background-position: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    filter: brightness(0.6); /* Adjust the brightness to your liking */
+    filter: brightness(0.8); /* Adjust the brightness to your liking */
+    height: 40%;
+    margin-bottom: 10px;
 }
 
 .hero-content {
@@ -319,7 +315,7 @@ footer .content .top{
 }
 .top .media-icons a:nth-child(1){
   background: #4267B2;
-  border-radius: 10px;
+  border-radius: 20% ;
 }
 .top .media-icons a:nth-child(1):hover{
   color: #4267B2;
@@ -329,7 +325,7 @@ footer .content .top{
 .top .media-icons a:nth-child(2){
   background: #1DA1F2;
   margin-left: 5px;
-  border-radius: 10px;
+  border-radius: 20% ;
 }
 .top .media-icons a:nth-child(2):hover{
   color: #1DA1F2;
@@ -339,7 +335,7 @@ footer .content .top{
 .top .media-icons a:nth-child(3){
   background: #E1306C;
   margin-left: 5px;
-  border-radius: 10px;
+  border-radius: 20% ;
 }
 .top .media-icons a:nth-child(3):hover{
   color: #E1306C;
@@ -349,7 +345,7 @@ footer .content .top{
 .top .media-icons a:nth-child(4){
   background: #a8a35f;
   margin-left: 5px;
-  border-radius: 10px;
+  border-radius: 20% ;
 }
 .top .media-icons a:nth-child(4):hover{
   color: #0077B5;
@@ -359,7 +355,7 @@ footer .content .top{
 .top .media-icons a:nth-child(5){
   background: #FF0000;
   margin-left: 5px;
-  border-radius: 10px;
+  border-radius: 20% ;
 }
 .top .media-icons a:nth-child(5):hover{
   color: #FF0000;
@@ -1154,7 +1150,7 @@ main {
   width: 300px;
   height: 60px;
   background-color: #f5f5f5;
-  border-radius: 10px;
+  border-radius: 20% ;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
   z-index: 9999;
   overflow: hidden;
