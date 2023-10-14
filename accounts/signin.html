@@ -1,37 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Marketplace - Login</title>
     <link rel="stylesheet" href="accounts.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
+
 <body>
-    <div class="login-container">
-        <div class="login-form">
-            <h1>Login to Your Student Marketplace Account</h1>
-            <form>
-                <div class="input-container">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
+    <header>
+        <nav class="navbar">
+            <div class="navcontainer">
+                <div class="max">
+                    <div class="logo">
+                        <img src="../assets/images/logo.jpg" alt="Sudplace Logo">
+                    </div>
+                    <div class="menu">
+                        <ul>
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="../about.html">About</a></li>
+                            <li><a href="../chat.html">Chat</a></li>
+                            <li><a href="../contact.html">Contact</a></li>
+                            <li><a href="../profile.html">Profile</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="input-container">
-                    <label for="password">Password:</label>
-                    <input type="password" id="password" name="password" required>
+                <div class="search">
+                    <input class="search-bar" type="text" placeholder="Search for anything...">
+                    <button class="search-btn">Search</button>
                 </div>
-                <div class="remember-forgot">
-                    <label for="remember-me">
-                        <input type="checkbox" id="remember-me"> Remember Me
-                    </label>
-                    <a href="forgot-password.html">Forgot Password?</a>
+                <div class="user-actions">
+                    <a href="#" class="signin-btn">Sign in</a>
+                    <a href="#" class="favorites-btn">
+                        <img src="../assets/images/icons/favorite_FILL0_wght400_GRAD0_opsz24.png" alt="">
+                    </a>
+                    <a href="#" class="cart-btn">
+                        <img src="../assets/images/icons/add_shopping_cart_FILL0_wght400_GRAD0_opsz24.png" alt="">
+                    </a>
                 </div>
-                <button class="login-button" type="submit">Login</button>
-            </form>
-        </div>
-        <div class="registration-link">
-            <p>Don't have an account?</p>
-            <a href="registration.html">Sign up here</a>
+            </div>
+        </nav>
+    </header>
+    <div class="centrecontainer">
+        <div class="login-container">
+            <div class="login-form">
+                <h1>Login to Your Student Marketplace Account</h1>
+                <form>
+                    <div class="input-container">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="input-container">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="remember-forgot">
+                        <label for="remember-me">
+                            <input type="checkbox" id="remember-me"> Remember Me
+                        </label>
+                        <a href="forgot-password.html">Forgot Password?</a>
+                    </div>
+                    <button class="login-button" type="submit">Login</button>
+                </form>
+            </div>
+            <div class="registration-link">
+                <p>Don't have an account?</p>
+                <a href="registration.html">Sign up here</a>
+            </div>
         </div>
     </div>
 </body>
+
 </html>

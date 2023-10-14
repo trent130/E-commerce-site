@@ -1,12 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <?php 
+    session start();
+
 </head>
+
 <body>
+    <?php
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Retrieve form data
+    $name = $_POST["name"];
+    $email = $_POST["email"];
+    $subject = $_POST["subject"];
+    $message = $_POST["message"];
+    
+    // Your email address where you want to receive the contact form submissions
+    $to = "your@email.com";
+
+    // Email subject
+    $email_subject = "Contact Form Submission: $subject";
+
+    // Email message
+    $email_message = "Name: $name\n";
+    $email_message .= "Email: $email\n";
+    $email_message .= "Subject: $subject\n";
+    $email_message .= "Message:\n$message";
+
+    // Additional headers
+    $headers = "From: $email\r\n";
+
+    // Send the email
+    mail($to, $email_subject, $email_message, $headers);
+
+    // Redirect to a thank you page or back to the contact page
+    header("Location: thank_you.html");
+    } else {
+    // Redirect to an error page if accessed directly without POST data
+    header("Location: error.html");
+    }
+    ?>
+
     <header>
         <nav class="navbar">
             <div class="navcontainer">
@@ -47,41 +86,42 @@
             <p><strong>Email:</strong> info@Sudplace.com</p>
             <p><strong>Address:</strong> 123 Main Street, nakuru, Kenya</p>
         </section>
-    
+
         <section class="contact-page-form">
             <h2>Contact Form</h2>
             <form action="submit_form.php" method="POST">
                 <label for="contact-page-name">Name:</label>
                 <input type="text" id="contact-page-name" name="name" required><br><br>
-    
+
                 <label for="contact-page-email">Email:</label>
                 <input type="email" id="contact-page-email" name="email" required><br><br>
-    
+
                 <label for="contact-page-subject">Subject:</label>
                 <input type="text" id="contact-page-subject" name="subject" required><br><br>
-    
+
                 <label for="contact-page-message">Message:</label><br>
                 <textarea id="contact-page-message" name="message" rows="5" required></textarea><br><br>
-    
+
                 <input type="submit" value="Submit">
             </form>
         </section>
-    
+
         <section class="contact-page-hours">
             <h2>Business Hours</h2>
             <p>Monday to Friday: 9am - 5pm</p>
         </section>
-    
+
         <section class="contact-page-faq">
             <h2>FAQ</h2>
             <div class="faq-question">
                 <p><strong>Q:</strong> Can I return an item?</p>
                 <div class="faq-answer">
-                    <p><strong>A:</strong> Yes, you can return an item within 30 days of purchase. Please refer to our <a href="faq.html">FAQ page</a> for more information.</p>
+                    <p><strong>A:</strong> Yes, you can return an item within 30 days of purchase. Please refer to our
+                        <a href="faq.html">FAQ page</a> for more information.</p>
                 </div>
             </div>
         </section>
-    
+
         <section class="contact-page-support">
             <h2>Customer Support</h2>
             <p>For customer support, you can reach us through:</p>
@@ -91,79 +131,81 @@
                 <li><strong>Live Chat:</strong> Click the chat icon on the bottom right corner of the page</li>
             </ul>
         </section>
-    
+
         <section class="contact-page-location">
             <h2>Location</h2>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.67890!2dlongitude!3dlatitude!4m15!2m14!1m13!1saddress!4m2!1dlongitude!2dlatitude!5e0!3m2!1sen!2sus!4v1234567890" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.67890!2dlongitude!3dlatitude!4m15!2m14!1m13!1saddress!4m2!1dlongitude!2dlatitude!5e0!3m2!1sen!2sus!4v1234567890"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </section>
     </main>
-   <script>
-    document.addEventListener("DOMContentLoaded", function() {
-  var faqQuestions = document.querySelectorAll(".faq-question");
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var faqQuestions = document.querySelectorAll(".faq-question");
 
-  faqQuestions.forEach(function(question) {
-    question.addEventListener("click", function() {
-      var answer = this.querySelector(".faq-answer");
-      answer.style.display = answer.style.display === "none" ? "block" : "none";
-    });
-  });
-});
-   </script>
+            faqQuestions.forEach(function (question) {
+                question.addEventListener("click", function () {
+                    var answer = this.querySelector(".faq-answer");
+                    answer.style.display = answer.style.display === "none" ? "block" : "none";
+                });
+            });
+        });
+    </script>
 
-<footer>
-    <div class="content">
-        <div class="top">
-            <div class="logo-details">
-                <i class="fab fa-slack"></i>
-                <span class="logo_name">Sudplace</span>
+    <footer>
+        <div class="content">
+            <div class="top">
+                <div class="logo-details">
+                    <i class="fab fa-slack"></i>
+                    <span class="logo_name">Sudplace</span>
+                </div>
+                <div class="media-icons">
+                    <a href="#"><img src="assets/images/Facebook_Logo_Primary.png" alt="Facebook"></a>
+                    <a href="#"><img src="assets/images/X-logo-Twitter.jpg" alt="Twitter"></a>
+                    <a href="#"><img src="assets/images/instagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="assets/images/linkedin.png" alt="LinkedIn"></a>
+                    <a href="#"><img src="assets/images/youtube.png" alt="YouTube"></a>
+                </div>
             </div>
-            <div class="media-icons">
-                <a href="#"><img src="assets/images/Facebook_Logo_Primary.png" alt="Facebook"></a>
-                <a href="#"><img src="assets/images/X-logo-Twitter.jpg" alt="Twitter"></a>
-                <a href="#"><img src="assets/images/instagram.png" alt="Instagram"></a>
-                <a href="#"><img src="assets/images/linkedin.png" alt="LinkedIn"></a>
-                <a href="#"><img src="assets/images/youtube.png" alt="YouTube"></a>
+            <div class="link-boxes">
+                <ul class="box">
+                    <li class="link_name">Company</li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="accounts/registration.html">Get started</a></li>
+                </ul>
+                <ul class="box">
+                    <li class="link_name">Services</li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Delivery</a></li>
+                    <li><a href="#">optimization</a></li>
+                    <li><a href="#">Secure</a></li>
+                </ul>
+                <ul class="box">
+                    <li class="link_name">Account</li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="profile.html">My account</a></li>
+                    <li><a href="profile.html">Preferences</a></li>
+                    <li><a href="#">Purchase</a></li>
+                </ul>
+                <ul class="box input-box">
+                    <li class="link_name">Subscribe</li>
+                    <li><input type="text" placeholder="Enter your email"></li>
+                    <li><input type="button" value="Subscribe"></li>
+                </ul>
             </div>
         </div>
-        <div class="link-boxes">
-            <ul class="box">
-                <li class="link_name">Company</li>
-                <li><a href="#">Home</a></li>
-                <li><a href="contact.html">Contact us</a></li>
-                <li><a href="about.html">About us</a></li>
-                <li><a href="accounts/registration.html">Get started</a></li>
-            </ul>
-            <ul class="box">
-                <li class="link_name">Services</li>
-                <li><a href="#">Shipping</a></li>
-                <li><a href="#">Delivery</a></li>
-                <li><a href="#">optimization</a></li>
-                <li><a href="#">Secure</a></li>
-            </ul>
-            <ul class="box">
-                <li class="link_name">Account</li>
-                <li><a href="profile.html">Profile</a></li>
-                <li><a href="profile.html">My account</a></li>
-                <li><a href="profile.html">Preferences</a></li>
-                <li><a href="#">Purchase</a></li>
-            </ul>
-            <ul class="box input-box">
-                <li class="link_name">Subscribe</li>
-                <li><input type="text" placeholder="Enter your email"></li>
-                <li><input type="button" value="Subscribe"></li>
-            </ul>
+        <div class="bottom-details">
+            <div class="bottom_text">
+                <span class="copyright_text">Copyright © 2024 <a href="#">Sudplace,</a>All rights reserved</span>
+                <span class="policy_terms">
+                    <a href="#">Privacy policy</a>
+                    <a href="#">Terms & condition</a>
+                </span>
+            </div>
         </div>
-    </div>
-    <div class="bottom-details">
-        <div class="bottom_text">
-            <span class="copyright_text">Copyright © 2024 <a href="#">Sudplace,</a>All rights reserved</span>
-            <span class="policy_terms">
-                <a href="#">Privacy policy</a>
-                <a href="#">Terms & condition</a>
-            </span>
-        </div>
-    </div>
-</footer>
-    </body>
-    
-    </html>
+    </footer>
+</body>
+
+</html>
