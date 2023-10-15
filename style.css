@@ -1212,7 +1212,6 @@ main {
   background-image: url("assets/images/Fav_bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
 }
 .favcontainer {
   max-width: 1200px;

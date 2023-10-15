@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+      .paycontainer {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .paycontainer h2 {
+            font-size: 24px;
+            margin: 0 0 20px;
+        }
+
+        .payment-method {
+            background-color: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .payment-option {
+            display: flex;
+            align-items: center;
+        }
+
+        .payment-option input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        .payment-option label {
+            font-size: 18px;
+        }
+
+        .payment-details {
+            background-color: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"], input[type="number"], select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+        }
+
+        .pay-button {
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        .pay-button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="paycontainer">
+        <h2>Choose Your Payment Method</h2>
+
+        <div class="payment-method">
+            <div class="payment-option">
+                <input type="radio" id="credit-card" name="payment-option" value="credit-card">
+                <label for="credit-card">Credit Card</label>
+            </div>
+            <div class="payment-option">
+                <input type="radio" id="paypal" name="payment-option" value="paypal">
+                <label for="paypal">PayPal</label>
+            </div>
+            <div class="payment-option">
+                <input type="radio" id="mpesa" name="payment-option" value="mpesa">
+                <label for="mpesa"><a href="payment/mpesa"></a></label>
+            </div>
+            <div class="payment-option">
+                <input type="radio" id="cash" name="payment-option" value="cash">
+                <label for="cash">Cash</label>
+            </div>
+            <div class="payment-option">
+                <input type="radio" id="crypto" name="payment-option" value="crypto">
+                <label for="crypto">crypto</label>
+            </div>
+            <!-- Add more payment options as needed -->
+        </div>
+        <button class="pay-button">CheckOut</button>
+    </div>
+</body>
+</html>
