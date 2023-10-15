@@ -626,7 +626,7 @@ header {
   }
   
   .user-actions a:hover {
-    background-color: transparent;
+    background-color: #bd7272;
     color: wheat;
     border-radius: 15%;
   }
