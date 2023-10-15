@@ -6,7 +6,7 @@
     <title>Favourite items</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="Favbod4">
     <header>
         <nav class="navbar">
             <div class="navcontainer">
@@ -30,10 +30,10 @@
                 </div>
                 <div class="user-actions">
                     <a href="./accounts/signin.html" class="signin-btn">Sign in</a>
-                    <a href="#" class="favorites-btn">
+                    <a href="favourite_items.html" class="favorites-btn">
                         <img src="assets/images/icons/favorite_FILL0_wght400_GRAD0_opsz24.png" alt="">
                     </a>
-                    <a href="#" class="cart-btn">
+                    <a href="cart.html" class="cart-btn">
                         <img src="assets/images/icons/add_shopping_cart_FILL0_wght400_GRAD0_opsz24.png" alt="">
                     </a>
                 </div>
@@ -41,48 +41,55 @@
         </nav>
     </header>
 
-    <div class="container">
-        <div class="favorite-item">
-            <img class="item-image" src="item1.jpg" alt="Item 1">
-            <div class="item-details">
-                <h2>Item 1</h2>
-                <p>Description: This is the description of Item 1.</p>
-                <p>Price: $10.99</p>
-                <button>Add to Cart</button>
+    <div class="favcontainer">
+        <h2>Favourite items</h2>
+        <p>Here are your favourite items.</p>
+        <div class="gridlock">
+            <div class="favorite-item">
+                <img class="item-image" src="assets/images/demo_1.jpg" alt="Item 1">
+                <div class="item-details">
+                    <h4>Item 1</h4>
+                    <p>Description: This is the description of Item 1.</p>
+                    <p>Price: $10.99</p>
+                    <button class="item_button">Add to Cart</button>
+                </div>
             </div>
-        </div>
-        <div class="favorite-item">
-            <img class="item-image" src="item2.jpg" alt="Item 2">
-            <div class="item-details">
-                <h2>Item 2</h2>
-                <p>Description: This is the description of Item 2.</p>
-                <p>Price: $19.99</p>
-                <button>Add to Cart</button>
+            <div class="favorite-item">
+                <img class="item-image" src="assets/images/demo_2.jpg" alt="Item 2">
+                <div class="item-details">
+                    <h4>Item 2</h4>
+                    <p>Description: This is the description of Item 2.</p>
+                    <p>Price: $19.99</p>
+                    <button class="item_button">Add to Cart</button>
+                </div>
             </div>
+    
+    
+            <!-- Add more favorite items as needed -->
         </div>
-        <!-- Add more favorite items as needed -->
-        
         <div class="recently-viewed">
             <h2>Recently Viewed Items</h2>
-            <div class="recent-item">
-                <img class="item-image" src="item3.jpg" alt="Item 3">
-                <div class="item-details">
-                    <h3>Item 3</h3>
-                    <p>Description: This is the description of Item 3.</p>
-                    <p>Price: $14.99</p>
-                    <button>Add to Cart</button>
+            <div class="gridlock">
+                <div class="recent-item">
+                    <img class="item-image" src="assets/images/demo_3.jpg" alt="Item 3">
+                    <div class="item-details">
+                        <h4>Item 3</h4>
+                        <p>Description: This is the description of Item 3.</p>
+                        <p>Price: $14.99</p>
+                        <button class="recently_viewed">Add to Cart</button>
+                    </div>
                 </div>
-            </div>
-            <div class="recent-item">
-                <img class="item-image" src="item4.jpg" alt="Item 4">
-                <div class="item-details">
-                    <h3>Item 4</h3>
-                    <p>Description: This is the description of Item 4.</p>
-                    <p>Price: $9.99</p>
-                    <button>Add to Cart</button>
+                <div class="recent-item">
+                    <img class="item-image" src="assets/images/demo_4.jpg" alt="Item 4">
+                    <div class="item-details">
+                        <h4>Item 4</h4>
+                        <p>Description: This is the description of Item 4.</p>
+                        <p>Price: $9.99</p>
+                        <button class="recently_viewed">Add to Cart</button>
+                    </div>
                 </div>
+                <!-- Add more recently viewed items as needed -->
             </div>
-            <!-- Add more recently viewed items as needed -->
         </div>
     </div>
     </body>

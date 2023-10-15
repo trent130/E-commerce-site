@@ -1207,7 +1207,78 @@ main {
   border-radius: 5px;
   cursor: pointer;
 }
+/*favourite items styling*/
+.Favbody{
+  background-image: url("assets/images/Fav_bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.favcontainer {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+}
 
+.gridlock {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.favcontainer h2 {
+  font-size: 24px;
+  margin: 0 0 20px;
+  justify-content: center;
+  text-align: center;
+}
+
+.favorite-item, .recent-item {
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.item-image {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+
+.item-details {
+  flex-grow: 1;
+}
+
+h2, h3 {
+  font-size: 20px;
+  margin: 0;
+}
+
+p {
+  margin: 5px 0;
+}
+
+.item_button, .recently_viewed {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.item_button:hover, .recently_viewed:hover {
+  background-color: #2980b9;
+}
 /*Responsive styles*/
 
 /* Responsive Styles */
