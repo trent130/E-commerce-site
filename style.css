@@ -23,7 +23,7 @@ body {
     background-size: cover;
     background-position: center;
     filter: brightness(0.8); /* Adjust the brightness to your liking */
-    height: 40%;
+    height: 60%;
     margin-bottom: 10px;
 }
 
@@ -526,6 +526,7 @@ footer .bottom-details .bottom_text{
 header {
     background-color: #FF0000;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
   }
   
   .navbar {
