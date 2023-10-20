@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sudplace</title>
     <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
+    <!-- CODAI: Include Bootstrap CSS for responsiveness. -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         /* Add any additional inline styles here if needed */
     </style>
@@ -75,29 +77,36 @@
     <!-- Featured Listings Section -->
     <section class="featured-listings">
         <h2>Featured Listings</h2>
-        <div class="list_container">
-            <div class="listing-card">
-                <img src="assets/images/demo_1.jpg" alt="Listing 1">
-                <div class="listing-details">
-                    <h3>Textbook - Biology 101</h3>
-                    <p class="price">$30</p>
-                    <button class="view-listing-button">View Listing</button>
+        <div class="list_container row">
+            <!-- CODAI: Use Bootstrap classes to make the cards responsive. -->
+            <div class="col-md-4">
+                <div class="listing-card">
+                    <img src="assets/images/demo_1.jpg" alt="Listing 1">
+                    <div class="listing-details">
+                        <h3>Textbook - Biology 101</h3>
+                        <p class="price">$30</p>
+                        <button class="btn btn-primary">View Listing</button>
+                    </div>
                 </div>
             </div>
-            <div class="listing-card">
-                <img src="assets/images/demo_1.jpg" alt="Listing 2">
-                <div class="listing-details">
-                    <h3>Laptop -Dell Inspiron</h3>
-                    <p class="price">$500</p>
-                    <button class="view-listing-button">View Listing</button>
+            <div class="col-md-4">
+                <div class="listing-card">
+                    <img src="assets/images/demo_1.jpg" alt="Listing 2">
+                    <div class="listing-details">
+                        <h3>Laptop - Dell Inspiron</h3>
+                        <p class="price">$500</p>
+                        <button class="btn btn-primary">View Listing</button>
+                    </div>
                 </div>
             </div>
-            <div class="listing-card">
-                <img src="assets/images/demo_1.jpg" alt="Listing 2">
-                <div class="listing-details">
-                    <h3>Laptop - Hp Pavillion</h3>
-                    <p class="price">$800</p>
-                    <button class="view-listing-button">View Listing</button>
+            <div class="col-md-4">
+                <div class="listing-card">
+                    <img src="assets/images/demo_1.jpg" alt="Listing 3">
+                    <div class="listing-details">
+                        <h3>Laptop - HP Pavilion</h3>
+                        <p class="price">$800</p>
+                        <button class="btn btn-primary">View Listing</button>
+                    </div>
                 </div>
             </div>
             <!-- Add more featured listings here -->
@@ -117,9 +126,9 @@
         <section class="categories">
             <h3>Popular Categories</h3>
             <ul>
-                <li><a href="#">Textbooks</a></li>
-                <li><a href="#">Electronics</a></li>
-                <li><a href="#">Furniture</a></li>
+                <li><a href="books.html">Textbooks</a></li>
+                <li><a href="electronics.html">Electronics</a></li>
+                <li><a href="furniture.html">Furniture</a></li>
             </ul>
         </section>
     </div> 
@@ -145,27 +154,32 @@
         </div>
     </section>
 
-    <!-- Testimonials Section -->
     <section class="testimonials">
         <h2>What Students Are Saying</h2>
-
-        <div class="testimony_container">
-            <div class="testimonial">
-                <img src="assets/images/demo_3.jpg" alt="">
-                <p>"This marketplace made it easy for me to find affordable textbooks. Highly recommended!"</p>
-                <p class="author">- Emily, Biology Major</p>
+        <div class="testimony_container row">
+            <!-- CODAI: Use Bootstrap classes to make the testimonials responsive. -->
+            <div class="col-md-4">
+                <div class="testimonial">
+                    <img src="assets/images/demo_3.jpg" alt="Testimonial 1">
+                    <p>"This marketplace made it easy for me to find affordable textbooks. Highly recommended!"</p>
+                    <p class="author">- Emily, Biology Major</p>
+                </div>
             </div>
-            <div class="testimonial">
-                <img src="assets/images/demo_2.jpg" alt="">
-                <p>"Selling my old electronics here was a breeze. Great platform for students!"</p>
-                <p class="author">- Alex, Computer Science</p>
+            <div class="col-md-4">
+                <div class="testimonial">
+                    <img src="assets/images/demo_2.jpg" alt="Testimonial 2">
+                    <p>"Selling my old electronics here was a breeze. Great platform for students!"</p>
+                    <p class="author">- Alex, Computer Science</p>
+                </div>
             </div>
-            <div class="testimonial">
-                <img src="assets/images/demo_1.jpg" alt="">
-                <p>"Selling my old furnitures here was a breeze. Great platform for students!"</p>
-                <p class="author">- Lawrence, Information Technology</p>
+            <div class="col-md-4">
+                <div class="testimonial">
+                    <img src="assets/images/demo_1.jpg" alt="Testimonial 3">
+                    <p>"Selling my old furniture here was a breeze. Great platform for students!"</p>
+                    <p class="author">- Lawrence, Information Technology</p>
+                </div>
             </div>
-            <!-- Add more testimonials as needed -->
+            <!-- Add more testimonials here within col-md-4 divs -->
         </div>
     </section>
 
@@ -225,6 +239,10 @@
     </footer>
 
     <script src="assets/js/script.js"></script>
+       <!-- CODAI: Include Bootstrap JS for responsive features (optional). -->
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </body>
 

@@ -4,6 +4,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Furniture</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Navigation Menu */
+.custom-nav {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 0;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-list li {
+    margin: 0 20px;
+    text-transform: uppercase;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav-list li a:hover {
+    color: #ff6600;
+}
+
+/* Product Sections */
+.living-room-furniture, .bedroom-furniture, .kitchen-dining-furniture {
+    margin: 40px 0;
+}
+
+.living-room-furniture h2, .bedroom-furniture h2, .kitchen-dining-furniture h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    width: 30%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product h3 {
+    margin: 20px 0;
+    font-size: 20px;
+    color: #333;
+}
+
+.product p {
+    font-style: italic;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+/* Adjust the price style for better visibility */
+.product p {
+    font-weight: bold;
+    font-size: 18px;
+    color: #ff6600;
+}
+
+    </style>
 </head>
 <body>
     <header>
@@ -39,7 +132,71 @@
             </div>
         </nav>
     </header>
+    <nav class="custom-nav">
+        <ul class="nav-list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Living Room</a></li>
+            <li><a href="#">Bedroom</a></li>
+            <li><a href="#">Kitchen & Dining</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section class="product-section living-room-furniture">
+            <h2>Living Room</h2>
+            <div class="product-container">
+                <!-- Display living room furniture here -->
+                <div class="product living-room-set">
+                    <img src="living-room1.jpg" alt="Living Room 1">
+                    <h3>Living Room Set 1</h3>
+                    <p>Price: $999</p>
+                </div>
+                <div class="product living-room-set">
+                    <img src="living-room2.jpg" alt="Living Room 2">
+                    <h3>Living Room Set 2</h3>
+                    <p>Price: $799</p>
+                </div>
+                <!-- Add more living room furniture elements as needed -->
+            </div>
+        </section>
 
+        <section class="product-section bedroom-furniture">
+            <h2>Bedroom</h2>
+            <div class="product-container">
+                <!-- Display bedroom furniture here -->
+                <div class="product bedroom-set">
+                    <img src="bedroom1.jpg" alt="Bedroom 1">
+                    <h3>Bedroom Set 1</h3>
+                    <p>Price: $1499</p>
+                </div>
+                <div class="product bedroom-set">
+                    <img src="bedroom2.jpg" alt="Bedroom 2">
+                    <h3>Bedroom Set 2</h3>
+                    <p>Price: $1299</p>
+                </div>
+                <!-- Add more bedroom furniture elements as needed -->
+            </div>
+        </section>
+
+        <section class="product-section kitchen-dining-furniture">
+            <h2>Kitchen & Dining</h2>
+            <div class="product-container">
+                <!-- Display kitchen and dining furniture here -->
+                <div class="product kitchen-dining-set">
+                    <img src="kitchen-dining1.jpg" alt="Kitchen & Dining 1">
+                    <h3>Kitchen & Dining Set 1</h3>
+                    <p>Price: $999</p>
+                </div>
+                <div class="product kitchen-dining-set">
+                    <img src="kitchen-dining2.jpg" alt="Kitchen & Dining 2">
+                    <h3>Kitchen & Dining Set 2</h3>
+                    <p>Price: $799</p>
+                </div>
+                <!-- Add more kitchen and dining furniture elements as needed -->
+            </div>
+        </section>
+    </main>
+    
     <footer>
         <div class="content">
             <div class="top">
